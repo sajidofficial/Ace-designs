@@ -627,16 +627,15 @@ label.error {
   margin-top: 17px;
 }
 
+
+
 .footer-social li a {
   color: #cdd2d6;
   display: block;
   margin-bottom: 10px;
 }
 
-#map_canvas {
-  height: 215px;
-  width: 100%;
-}
+
 
 
 
@@ -648,7 +647,7 @@ label.error {
 .footer {
   background-color: #1ea78d;
   border-top: 5px solid #062033;
-  color: #fff;
+  color: #fff;background-size: cover;
 }
 
 .footer a:hover {
@@ -656,14 +655,17 @@ label.error {
 }
 
 .footer h6 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 18px;
   margin-bottom: 30px;
 }
 
-.about-us p {
-  line-height: 24px;
+.mapouter{
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 
 .footer-single .subscribe {
@@ -690,18 +692,17 @@ label.error {
 }
 
 .footer-single {
-  line-height: 24px;
+  line-height: 15px;
 }
 
-.footer-single ul {
-  }
+
 
 .footer-single li {
-  line-height: 32px;
+  line-height: 25px;
 }
 
 .footer-single p i {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .credit a {
