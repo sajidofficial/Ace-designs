@@ -768,7 +768,7 @@ label.error {
 #back-top {
   bottom: 80px;
   position: fixed;
-  right: 35px;
+  right: 40px;
   z-index: 9;
   color:grey;
 }
