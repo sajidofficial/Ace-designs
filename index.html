@@ -47,7 +47,29 @@
 			<img src="img/preloader.gif" alt="Preloader">
 		</div>
 		<!-- end preloader -->
+         <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
 
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="111001910806324">
+      </div>
         <!-- 
         Fixed Navigation
         ==================================== -->
@@ -102,7 +124,7 @@
 					
 					<!-- single slide -->
 					<div class="item active" style="background-image: url(img/banner.jpg);">
-						<div  data-wow-duration="700ms" data-wow-delay="500ms" class="profile-circle"><img src ="img/profile.gif" alt="profile"  height="280"></div>
+						<div  data-wow-duration="700ms" data-wow-delay="500ms" class="profile-circle"><img src ="img/profile.gif" alt="profile"  height="300"></div>
 						
 						<div class="carousel-caption">
 							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Hey<span> am Sajid</span>!</h2>
