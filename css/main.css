@@ -210,15 +210,23 @@ body > section,
 }
 
 .navbar-nav li a {
-	border-top: 1px solid transparent;
+  border-top: 1px ;
+  font-size: 20px;
 }
 
 .navbar-nav li a.current,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
-	background-color: transparent;
-	border-top: 1px solid #32B0EE;
-	color: #fff;
+	background-color: black;
+	border-top: 1px solid white;
+  }
+  
+.current{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  z-index: 2;
 }
 
 
