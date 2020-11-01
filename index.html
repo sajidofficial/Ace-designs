@@ -23,8 +23,10 @@
 
 		<!-- CSS
 		================================================== -->
+		
 		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
 		<!-- Twitter Bootstrap css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- jquery.fancybox  -->
@@ -74,41 +76,40 @@
         <!-- 
         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-fixed-top navbar">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-bars fa-2x"></i>
-                    </button>
-					<!-- /responsive nav button -->
-					
-					<!-- logo -->
-                    <a class="navbar-brand" href="#body">
+		<nav class="nav">
+			<span id="brand">
+				  <a class="navbar-brand" href="#body">
 						<h1 id="logo">
-							<img src="img/NAV logo.gif" alt="logo" width="220" height="65">
+							  <img src="img/NAV logo.gif" alt="logo" width="200" height="50">
 						</h1>
 						</a>
-						
-					<!-- /logo -->
-				</div>
-				
+			</span>
 
-				<!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="#body">Home</a></li>
-                        <li class="current"><a href="#features">Services</a></li>
-						<li class="current"><a href="#works">Works</a></li>
-						<li class="current"><a href="#">Pricing</a></li>
-                        <li class="current"><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-				<!-- /main nav -->
-				
-            </div>
-        </header>
+			<ul id="menu">
+				  <li><a href="#home">Home</a></li>
+				  <li><a href="#services">Services</a></li>
+				  <li><a href="#features">Works</a></li>
+				  <li><a href="#pricing">Pricing</a></li>
+				  <li><a href="#contact">Contact</a></li>
+			</ul>
+
+			<div id="toggle">
+				  <div class="span">menu</div>
+			</div>
+
+	  </nav>
+
+	  <div id="resize">
+			<div class="close-btn">close</div>
+
+			<ul id="menu">
+				  <li><a href="#home">Home</a></li>
+				  <li><a href="#services">Services</a></li>
+				  <li><a href="#features">Works</a></li>
+				  <li><a href="#pricing">Pricing</a></li>
+				  <li><a href="#contact">Contact</a></li>
+			</ul>
+	  </div>
         <!--
         End Fixed Navigation
         ==================================== -->
@@ -160,7 +161,7 @@
         Services
         ==================================== -->
 		
-		<section id="features" class="features">
+		<section id="services" class="features">
 			<div class="container">
 				<div class="row">
 				
@@ -202,7 +203,7 @@
 					<!-- end service item -->
 					
 					<!-- service item -->
-					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+					<div class="col-md-4 wow fadeInUp"   data-wow-delay="0.6s">
 						<div class="service-item">
 							<div class="service-icon">
 								<i class="fa fa-paint-brush fa-2x"></i>
@@ -229,7 +230,7 @@
         Our Works
         ==================================== -->
 		
-		<section id="works" class="works clearfix">
+		<section id="features" class="works clearfix">
 			<div class="container">
 				<div class="row">
 				
@@ -394,7 +395,97 @@
         <!--
         End Some fun facts
         ==================================== -->
-		
+	<!-- Start Pricing Table -->
+	<section id="pricing" class="section">
+		<div class="container">
+			<div class="row">
+			
+				  <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+					  <div class="pricing-heading">
+						   Pricing
+						    <div class="pricing-heading-animation">
+						    	<img src="img/1111111.png" alt="text animation">
+						    </div>
+					    
+				        </div>
+						
+				    </div>
+				
+			</div>
+			<div class="row">
+				<!-- Single Table -->
+				<div class="col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.4s">
+					<div class="single-table">
+						<!-- Table Head -->
+						<div class="table-head">
+							<h2 class="title">Basic</h2>
+							<div class="price">
+								<p class="amount">Rs.<span>50</span></p>
+							</div>
+							<i class="fa fa-desktop"></i>
+						</div>
+						<!-- Table List -->
+						<ul class="table-list">
+							<li>1 Business website</li>
+							<li>24/7 Technic Support</li>
+							<li>User Live</li>
+							<li>Unlimited Email Account</li>
+							<li class="cross">Disk Space</li>
+						</ul>
+						
+					</div>
+				</div>
+				<!-- End Single Table-->
+				<!-- Single Table -->
+				<div class="col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.6s">
+					<div class="single-table active">
+						<!-- Table Head -->
+						<div class="table-head">
+							<h2 class="title">Standard</h2>
+							<div class="price">
+								<p class="amount">$<span>80</span>/Year</p>
+							</div>
+							<i class="fa fa-desktop"></i>
+						</div>
+						<!-- Table List -->
+						<ul class="table-list">
+							<li>2 Business website</li>
+							<li>24/7 Technic Support</li>
+							<li>User Live</li>
+							<li>Unlimited Email Account</li>
+							<li class="cross">Disk Space</li>
+						</ul>
+						
+					</div>
+				</div>
+				<!-- End Single Table-->
+				<!-- Single Table -->
+				<div class="col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.8s">
+					<div class="single-table">
+						<!-- Table Head -->
+						<div class="table-head">
+							<h2 class="title">Premium</h2>
+							<div class="price">
+								<p class="amount">$<span>99</span>/Year</p>
+							</div>
+							<i class="fa fa-desktop"></i>
+						</div>
+						<!-- Table List -->
+						<ul class="table-list">
+							<li>5 Business website</li>
+							<li>24/7 Technic Support</li>
+							<li>User Live</li>
+							<li>Unlimited Email Account</li>
+							<li class="cross">Disk Space</li>
+						</ul>
+						
+					</div>
+				</div>
+				<!-- End Single Table-->
+			</div>	
+		</div>	
+	</section>		
+	<!--/ End Pricing Table -->
 		
 		<!--
         Contact Us
@@ -497,7 +588,71 @@
 
 		<!-- canvasnest-->
 		<script src="js/CanvasNest.js"></script>
+		
+		<script>
 
+			// navigation starts here
+			$("#toggle").click(function() {
+						$(this).toggleClass('on');
+						$("#resize").toggleClass("active");
+				  });
+				  $("#resize ul li a").click(function() {
+						$(this).toggleClass('on');
+						$("#resize").toggleClass("active");
+				  });
+				  $(".close-btn").click(function() {
+						$(this).toggleClass('on');
+						$("#resize").toggleClass("active");
+				  });
+			
+			$(function () {
+			  $(document).scroll(function () {
+				var $nav = $(".nav");
+				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			  });
+			});
+			
+			new WOW().init();
+			
+			// Select all links with hashes
+			$('a[href*="#"]')
+			  // Remove links that don't actually link to anything
+			  .not('[href="#"]')
+			  .not('[href="#0"]')
+			  .click(function(event) {
+				// On-page links
+				if (
+				  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+				  && 
+				  location.hostname == this.hostname
+				) {
+				  // Figure out element to scroll to
+				  var target = $(this.hash);
+				  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				  // Does a scroll target exist?
+				  if (target.length) {
+					// Only prevent default if animation is actually gonna happen
+					event.preventDefault();
+					$('html, body').animate({
+					  scrollTop: target.offset().top
+					}, 1000, function() {
+					  // Callback after animation
+					  // Must change focus!
+					  var $target = $(target);
+					  $target.focus();
+					  if ($target.is(":focus")) { // Checking if the target was focused
+						return false;
+					  } else {
+						$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+						$target.focus(); // Set focus again
+					  };
+					});
+				  }
+				}
+			  });
+			
+			
+			</script>
 
 		<!--typo-nav-->
 		<script src="js/typing.js"></script>
@@ -525,7 +680,7 @@
 				boxClass:     'wow',      // animated element css class (default is wow)
 				animateClass: 'animated', // animation css class (default is animated)
 				offset:       120,          // distance to the element when triggering the animation (default is 0)
-				mobile:       false,       // trigger animations on mobile devices (default is true)
+				mobile:       true,       // trigger animations on mobile devices (default is true)
 				live:         true        // act on asynchronously loaded content (default is true)
 			  }
 			);
