@@ -705,6 +705,11 @@ top: -8px;
 /*=======================
 	Pricing Table CSS
 =========================*/
+
+.container{
+  justify-content: center;
+}
+
 .pricing-heading{
   text-align: center;
   font-size: 40px;
