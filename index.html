@@ -48,7 +48,7 @@
 	
 		<!-- preloader -->
 		<div id="preloader">
-			<img src="img/preloader.gif" alt="Preloader">
+			<img src="img/preloader.gif" alt="Preloader" width="250px" height="250px">
 		</div>
 		<!-- end preloader -->
          <!-- Load Facebook SDK for JavaScript -->
@@ -129,6 +129,7 @@
 					
 					<!-- single slide -->
 					<div class="item active" style="background-image: url(img/banner.jpg);">
+						
 						<div  data-wow-duration="700ms" data-wow-delay="500ms" class="profile-circle"><img src ="img/profile.gif" alt="profile"  height="300"></div>
 						
 						<div class="carousel-caption">
@@ -644,7 +645,7 @@
 					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
 						<div class="contact-form">
 							<h3>Say hello!</h3>
-							<form action="#" id="contact-form">
+							<form action="process.php" id="contact-form" method="POST">
 								<div class="input-group name-email">
 									<div class="input-field">
 										<input type="text" name="name" id="name" placeholder="Name" class="form-control">
@@ -657,7 +658,7 @@
 									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
 								</div>
 								<div class="input-group">
-									<input type="submit" id="form-submit" class="pull-right" value="Send message">
+									<input type="submit" id="form-submit" class="pull-right" value="Send an Email" onclick="sendEmail()">
 								</div>
 							</form>
 						</div>
@@ -702,8 +703,7 @@
 		<!-- jquery.fancybox.pack -->
 		<script src="js/jquery.fancybox.pack.js"></script>
 
-		<!-- canvasnest-->
-		<script src="js/CanvasNest.js"></script>
+	
 		
 		<script>
 
@@ -770,8 +770,7 @@
 			
 			</script>
 
-		<!--typo-nav-->
-		<script src="js/typing.js"></script>
+
 
 
 		<!-- jquery.mixitup.min -->
