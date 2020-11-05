@@ -1,25 +1,11 @@
 <?php
+$to_email = "kazisajid1450@gmail.com";
+$subject = "Subject";
+$body = "Hi,";
+$headers = "From: kazisajid14@gmail.com";
 
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
-
-    $email-from = 'kazisajid14@gmail.com';
-
-    $email_subject = "New Form Submission";
-
-    $email_body = "User Name: $name.\n".
-                  "User Email: $visitor_email.\n".
-                  "User Message: $message.\n";
-
-        $to = "kazisajid14@gmail.com";
-
-        $headers = "From: $email_from \r\n";
-
-        $headers .= "Reply-To: $visitor_email \r\n";
-
-        mail($to,$email_subject,$email_body,$headers);
-
-        header("Location: index.html");
-        
-?>
+if (mail($to_email = "kazisajid1450@gmail.com", $subject = "Subject", $body = "Hi,", $headers = "From: kazisajid14@gmail.com")) {
+    echo "Email successfully sent to $to_email...";
+} else {
+    echo "Email sending failed...";
+}
